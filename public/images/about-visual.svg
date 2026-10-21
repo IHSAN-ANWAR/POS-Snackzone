@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e63946" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="500" height="500" rx="28" fill="#1a1a1a"/>
+  <rect width="500" height="500" rx="28" fill="url(#rg)"/>
+  <!-- Decorative ring -->
+  <circle cx="250" cy="250" r="180" fill="none" stroke="#e63946" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="8 6"/>
+  <circle cx="250" cy="250" r="140" fill="none" stroke="#e63946" stroke-opacity="0.06" stroke-width="1"/>
+  <!-- Big SZ -->
+  <text x="250" y="290" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="140" fill="#e63946" fill-opacity="0.12" letter-spacing="-4">SZ</text>
+  <!-- Center badge -->
+  <circle cx="250" cy="250" r="80" fill="#111" stroke="#e63946" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="250" y="240" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="32" fill="#fff">Snack</text>
+  <text x="250" y="275" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="32" fill="#e63946">Zone</text>
+  <!-- Stars -->
+  <text x="250" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffd60a">★★★★★</text>
+  <!-- Food icons around -->
+  <circle cx="100" cy="130" r="36" fill="#222" stroke="#e63946" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="142" text-anchor="middle" font-size="28" font-family="Arial">🍔</text>
+  <circle cx="400" cy="130" r="36" fill="#222" stroke="#e63946" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="400" y="142" text-anchor="middle" font-size="28" font-family="Arial">🌯</text>
+  <circle cx="100" cy="370" r="36" fill="#222" stroke="#e63946" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="382" text-anchor="middle" font-size="28" font-family="Arial">🍟</text>
+  <circle cx="400" cy="370" r="36" fill="#222" stroke="#e63946" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="400" y="382" text-anchor="middle" font-size="28" font-family="Arial">⭐</text>
+  <!-- Year badge -->
+  <rect x="190" y="355" width="120" height="28" rx="14" fill="#e63946" fill-opacity="0.15" stroke="#e63946" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="250" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e63946" font-weight="600">Rawalpindi · 2024</text>
+</svg>

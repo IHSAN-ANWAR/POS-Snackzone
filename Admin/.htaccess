@@ -1,0 +1,81 @@
+# ============================================
+# SECURITY: Protect Sensitive Files
+# ============================================
+
+# Deny access to .env files
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to configuration files
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "db.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Deny access to backup files
+<FilesMatch "\.(bak|backup|sql|log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ============================================
+# SECURITY: Disable Directory Listing
+# ============================================
+Options -Indexes
+
+# ============================================
+# SECURITY: Protect Against Code Injection
+# ============================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Block access to files with suspicious patterns
+    RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2})
+    RewriteRule ^(.*)$ index.php [F,L]
+</IfModule>
+
+# ============================================
+# PERFORMANCE: Enable Compression
+# ============================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+</IfModule>
+
+# ============================================
+# CORS HEADERS (Cross-Origin Resource Sharing)
+# ============================================
+<IfModule mod_headers.c>
+    # Handle preflight OPTIONS requests
+    <If "%{REQUEST_METHOD} == 'OPTIONS'">
+        Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+        Header always set Access-Control-Max-Age "3600"
+        Header always set Content-Length "0"
+        Header always set Content-Type "text/plain"
+    </If>
+    # NOTE: Do NOT set wildcard Access-Control-Allow-Origin here.
+    # config.php setCORS() handles origin checking per-request based on ALLOWED_ORIGINS env.
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+</IfModule>
+
+# ============================================
+# CACHE CONTROL
+# ============================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>

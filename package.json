@@ -1,0 +1,29 @@
+{
+  "name": "snackzone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "dev:full": "next dev --webpack --port 3000",
+    "build": "node -e \"const fs=require('fs');try{fs.renameSync('.env.local','.env.local.bak')}catch(e){}\" && next build --webpack && node -e \"const fs=require('fs');try{fs.renameSync('.env.local.bak','.env.local')}catch(e){}\"",
+    "start": "npx serve out -p 3000",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "framer-motion": "^13.4.0",
+    "lucide-react": "^1.34.0",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

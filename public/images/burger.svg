@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#1a1a1a"/>
+  <!-- Plate shadow -->
+  <ellipse cx="200" cy="320" rx="130" ry="18" fill="#000" fill-opacity="0.4"/>
+  <!-- Bun top -->
+  <ellipse cx="200" cy="160" rx="110" ry="55" fill="#c87941"/>
+  <ellipse cx="200" cy="145" rx="110" ry="45" fill="#d4854a"/>
+  <ellipse cx="200" cy="135" rx="108" ry="38" fill="#e8964e"/>
+  <!-- Sesame seeds -->
+  <ellipse cx="175" cy="125" rx="7" ry="4" fill="#c77a38" transform="rotate(-20 175 125)"/>
+  <ellipse cx="210" cy="118" rx="7" ry="4" fill="#c77a38" transform="rotate(10 210 118)"/>
+  <ellipse cx="235" cy="130" rx="6" ry="3.5" fill="#c77a38" transform="rotate(-5 235 130)"/>
+  <ellipse cx="165" cy="138" rx="6" ry="3.5" fill="#c77a38" transform="rotate(15 165 138)"/>
+  <!-- Lettuce -->
+  <path d="M88 190 Q120 175 155 185 Q180 175 200 182 Q225 172 255 183 Q285 173 315 188 Q315 205 285 198 Q255 208 225 198 Q200 207 175 198 Q145 208 115 200 Z" fill="#4caf50"/>
+  <path d="M90 192 Q115 182 145 190 Q170 180 195 188 Q220 178 250 187 Q278 178 312 192" fill="none" stroke="#388e3c" stroke-width="2"/>
+  <!-- Cheese -->
+  <path d="M100 200 L305 200 L310 218 L95 218 Z" fill="#ffc107"/>
+  <path d="M95 218 L85 230 L100 225 Z" fill="#ffb300"/>
+  <path d="M310 218 L320 230 L305 225 Z" fill="#ffb300"/>
+  <!-- Patty -->
+  <rect x="90" y="220" width="220" height="38" rx="10" fill="#5d3a1a"/>
+  <rect x="90" y="220" width="220" height="20" rx="10" fill="#6d4521"/>
+  <!-- Grill marks -->
+  <line x1="120" y1="222" x2="110" y2="255" stroke="#3d2010" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="222" x2="140" y2="255" stroke="#3d2010" stroke-width="3" stroke-linecap="round"/>
+  <line x1="180" y1="222" x2="170" y2="255" stroke="#3d2010" stroke-width="3" stroke-linecap="round"/>
+  <line x1="210" y1="222" x2="200" y2="255" stroke="#3d2010" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tomato -->
+  <rect x="95" y="260" width="210" height="18" rx="6" fill="#e53935"/>
+  <!-- Bun bottom -->
+  <ellipse cx="200" cy="288" rx="112" ry="22" fill="#d4854a"/>
+  <ellipse cx="200" cy="295" rx="112" ry="16" fill="#c87941"/>
+  <!-- Shine on top bun -->
+  <ellipse cx="175" cy="122" rx="30" ry="12" fill="#fff" fill-opacity="0.12" transform="rotate(-15 175 122)"/>
+</svg>

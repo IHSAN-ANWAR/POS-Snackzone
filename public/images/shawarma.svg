@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#1a1a1a"/>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="340" rx="100" ry="14" fill="#000" fill-opacity="0.4"/>
+  <!-- Wrap bottom fold -->
+  <ellipse cx="200" cy="310" rx="65" ry="22" fill="#c8a96e"/>
+  <!-- Wrap body -->
+  <rect x="135" y="130" width="130" height="185" rx="65" fill="#d4b47a"/>
+  <!-- Filling layers visible from top -->
+  <rect x="148" y="138" width="105" height="170" rx="55" fill="#e8c98a"/>
+  <!-- Chicken strips -->
+  <path d="M160 160 Q200 155 240 162 Q242 175 238 178 Q200 172 162 175 Z" fill="#c4793a"/>
+  <path d="M158 190 Q198 184 240 191 Q242 205 238 208 Q198 201 160 205 Z" fill="#b8682e"/>
+  <path d="M160 220 Q200 215 240 222 Q242 236 238 239 Q200 232 162 236 Z" fill="#c4793a"/>
+  <!-- Veggie greens -->
+  <path d="M155 175 Q175 170 195 176 Q185 182 165 182 Z" fill="#66bb6a"/>
+  <path d="M205 200 Q225 195 245 201 Q235 208 215 208 Z" fill="#66bb6a"/>
+  <!-- Sauce drizzle -->
+  <path d="M175 140 Q178 155 174 165" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" stroke-opacity="0.6"/>
+  <path d="M215 143 Q218 158 214 170" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" stroke-opacity="0.6"/>
+  <!-- Wrap paper / foil bottom -->
+  <rect x="148" y="265" width="105" height="55" rx="8" fill="#b8965a"/>
+  <line x1="158" y1="270" x2="158" y2="315" stroke="#a07840" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="175" y1="268" x2="175" y2="318" stroke="#a07840" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="200" y1="267" x2="200" y2="320" stroke="#a07840" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="225" y1="268" x2="225" y2="318" stroke="#a07840" stroke-width="1.5" stroke-opacity="0.5"/>
+  <line x1="242" y1="270" x2="242" y2="315" stroke="#a07840" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Shine -->
+  <ellipse cx="178" cy="150" rx="18" ry="8" fill="#fff" fill-opacity="0.1" transform="rotate(-20 178 150)"/>
+</svg>
